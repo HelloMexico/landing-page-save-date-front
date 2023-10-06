@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import 'ngx-toastr/toastr';
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+
+@import "primeng/resources/primeng.css";
+
+@import "primeicons/primeicons.css";
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%;
+    background-color: #fdeadb;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+$base-color-navbar: #FF0061;
+$base-color-button: #EA1964;
+
+.navbar-background {
+    background-color: $base-color-navbar;
+}
+
+.color-input::placeholder {
+    color: $base-color-navbar;
+}
+.button-register {
+    background-color: $base-color-button;
+}
+
+.custom-input {
+    @apply bg-transparent color-input border-2 border-gray-400;
+}
+
+.shake-anim {
+    @apply animate-shake animate-once animate-duration-200 animate-ease-in;
+}
+
+.input-primary {
+    @apply block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+}
+
+.button-primary {
+    @apply w-3/4 rounded-md navbar-background px-3.5 py-2.5 text-center text-xl font-semibold text-white shadow-sm;
+}
+
+.button-primary-disabled {
+    @apply w-3/4 rounded-md bg-gray-400 px-3.5 py-2.5 text-center text-xl font-semibold text-white shadow-sm;
+}
